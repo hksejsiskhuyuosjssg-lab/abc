@@ -5,7 +5,18 @@ function convertToBool(text, fault = 'true') {
 }
 module.exports = {
 
-SESSION_ID: process.env.SESSION_ID =𝙰𝚂𝙸𝚃𝙷𝙰-𝙼𝙳=a6989c9181efd9c9= undefined :𝙰𝚂𝙸𝚃𝙷𝙰-𝙼𝙳=4668d85483972748 process.env.SESSION_ID,
+SESSION_ID: process.env.SESSION_ID =𝙰𝚂𝙸𝚃𝙷𝙰-𝙼𝙳=a6989c9181ef undefined :const fs = require('fs');
+if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
+function convertToBool(text, fault = 'true') {
+    return text === fault ? true : false;
+}
+module.exports = {
+
+SESSION_ID: process.env.SESSION_ID === undefined ? 'Your SESSION ID Put' : process.env.SESSION_ID,
+PORT: process.env.PORT === undefined ? "8000" : process.env.PORT,
+SESSION_NAME: process.env.PORT === undefined ? "asitha" : process.env.SESSION_NAME,
+};
+4668d85483972748 process.env.SESSION_ID,
 PORT: process.env.PORT === undefined ? "8000" : process.env.PORT,
 SESSION_NAME: process.env.PORT === undefined ? "asitha" : process.env.SESSION_NAME,
 };
